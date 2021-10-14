@@ -15,7 +15,6 @@ export function Header() {
 const styles = StyleSheet.create({
     container:{
         alignItems:'center',
-        marginRight: 50        
     },
     logoImage:{
         width: 150,

@@ -11,6 +11,7 @@ import {
     TouchableHighlight
 
 } from 'react-native'
+import { Actions } from 'react-native-router-flux';
 
 import { Header } from '../../components/Header'
 import { HeaderPages } from '../../components/HeaderPages'
@@ -29,6 +30,7 @@ export function ManutencaoPage() {
     }, []);
 
     const onPress = () => {
+        Actions.InspectionForm()
     }
 
     return(

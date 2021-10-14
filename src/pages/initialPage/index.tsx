@@ -16,7 +16,9 @@ export function InitialPage(){
     return(
         <View style={ styles.container }>
             <ScrollView>
-            <Header/>
+                <View style={ styles.logo }>
+                    <Header/>
+                </View>
             <View style={ styles.firstPageHeader }>
                 <Text style={ styles.wellcomeMessage }>
                     Olá,{'\n'}Davi
@@ -49,19 +51,21 @@ export function InitialPage(){
 const styles = StyleSheet.create({
     container:{
      width: '100%',
-      minWidth: 300,
       alignItems: 'center',
       flex:1,
       flexDirection: 'column',
-      justifyContent: 'center',
+    },
+    logo:{
+        marginTop: 30,
+        marginRight: 50
     },
     firstPageHeader:{
         width: '70%',
         flexDirection: 'row',
         justifyContent:'space-between',
         alignItems:'center',
+        flex: 1,
         marginLeft: 40
-        
     },
     wellcomeMessage:{
         fontSize: 40
@@ -72,7 +76,6 @@ const styles = StyleSheet.create({
         borderRadius: 50
     },
     buttons:{
-        flex: 1,
         flexDirection: 'column',
         marginTop: 100,
         alignItems:'center',

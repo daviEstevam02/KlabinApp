@@ -16,11 +16,13 @@ import { Actions } from 'react-native-router-flux';
 import { Header } from '../../components/Header'
 import { HeaderPages } from '../../components/HeaderPages'
 
+var SearchBar = require('react-native-searchbar')
+
 const wait = (timeout:any) => {
     return new Promise(resolve => setTimeout(resolve, timeout));
 }
-
 export function InspectionPage() {
+
 
     const [refreshing, setRefreshing] = React.useState(false);
 
@@ -47,6 +49,9 @@ export function InspectionPage() {
             <View style= { styles.headerInspection }>
               <HeaderPages name="Inspeção"/>  
             </View>
+            <SearchBar 
+                
+            />
             {/* Search bar here */}
 
         <View style={styles.content}>
