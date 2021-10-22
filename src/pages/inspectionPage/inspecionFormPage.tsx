@@ -13,6 +13,7 @@ import { EnviromentButton } from '../../components/EnviromentButton/EnviromentBu
 
 import { Header } from '../../components/Header'
 
+
 export function InspectionForm(){
     return(
         <View style={styles.container}>
@@ -34,8 +35,6 @@ export function InspectionForm(){
                         showsHorizontalScrollIndicator = { false }
                         contentContainerStyle = { styles.enviromentList }
                     />
-                        
-                    
                 </View>
 
                 <View style={ styles.form }>
@@ -116,6 +115,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         textAlign: 'center',
         marginTop: 12,
+        fontSize: 17
         
     },
     formText:{
@@ -124,6 +124,7 @@ const styles = StyleSheet.create({
     },
     multilineInput:{
         height: 110,
+        fontSize: 17,
         marginTop: 12,
         borderColor:'#E0E0E0',
         backgroundColor:'#E0E0E0',

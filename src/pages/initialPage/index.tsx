@@ -39,9 +39,7 @@ export function InitialPage(){
                 <TouchableOpacity style={ styles.button }>
                     <Text style={ styles.buttonText }>Relatórios</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={ styles.button }>
-                    <Text style={ styles.buttonText }> Realidade Aumentada</Text>
-                </TouchableOpacity>
+               
             </View>
             </ScrollView>
         </View>

@@ -19,7 +19,8 @@
     "react-native-screens": "^3.8.0",
     "react-native-searchbar": "^1.16.0",
     "react-native-vector-icons": "^8.1.0",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "react-search-box": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

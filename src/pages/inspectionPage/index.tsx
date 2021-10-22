@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import {
     ScrollView,
     View,
@@ -8,15 +7,11 @@ import {
     ActivityIndicator,
     RefreshControl,
     TouchableOpacity,
-    TouchableHighlight
-
 } from 'react-native'
 import { Actions } from 'react-native-router-flux';
 
 import { Header } from '../../components/Header'
 import { HeaderPages } from '../../components/HeaderPages'
-
-var SearchBar = require('react-native-searchbar')
 
 const wait = (timeout:any) => {
     return new Promise(resolve => setTimeout(resolve, timeout));
@@ -49,11 +44,9 @@ export function InspectionPage() {
             <View style= { styles.headerInspection }>
               <HeaderPages name="Inspeção"/>  
             </View>
-            <SearchBar 
-                
-            />
+           
             {/* Search bar here */}
-
+            
         <View style={styles.content}>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
                 <View style= { styles.cardHeader }>
@@ -67,11 +60,8 @@ export function InspectionPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
@@ -86,11 +76,9 @@ export function InspectionPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
@@ -105,11 +93,9 @@ export function InspectionPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
@@ -124,11 +110,9 @@ export function InspectionPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             </View>
@@ -192,7 +176,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection:'row',
         alignItems:'center',
-        justifyContent:'space-between',
+        justifyContent:'center',
         marginTop: 30,
         
     },
@@ -200,8 +184,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#3992FA',
         padding: 6,
         borderRadius: 25,
-        width: '40%',
         alignItems: 'center',
+        flex: 1,
+        maxWidth:100
     }
 
 })
