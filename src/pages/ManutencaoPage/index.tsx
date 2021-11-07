@@ -67,11 +67,9 @@ export function ManutencaoPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
@@ -86,11 +84,9 @@ export function ManutencaoPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
@@ -105,11 +101,9 @@ export function ManutencaoPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={ onPress } style={styles.cards}>
@@ -124,11 +118,9 @@ export function ManutencaoPage() {
                 </View>
                 <View style= { styles.cardFotter }>
                     <View style= { styles.statusFotter }> 
-                        <Text style= { styles.textStatus }>Mancal</Text>
+                        <Text style= { styles.textStatus }>X543s12</Text>
                     </View >
-                    <View style= { styles.statusFotter }>
-                        <Text style= { styles.textStatus }>Mancal + Voluta</Text>
-                    </View>
+                   
                 </View>
             </TouchableOpacity>
             </View>
@@ -192,7 +184,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection:'row',
         alignItems:'center',
-        justifyContent:'space-between',
+        justifyContent:'center',
         marginTop: 30,
         
     },
@@ -200,8 +192,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#3992FA',
         padding: 6,
         borderRadius: 25,
-        width: '40%',
         alignItems: 'center',
+        flex:1,
+        maxWidth: 100
     }
 
 })
