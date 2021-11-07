@@ -15,6 +15,8 @@ import { Actions } from 'react-native-router-flux';
 
 import { Header } from '../../components/Header'
 import { HeaderPages } from '../../components/HeaderPages'
+import api from '../../utils/api'
+
 
 var SearchBar = require('react-native-searchbar')
 
@@ -22,8 +24,6 @@ const wait = (timeout:any) => {
     return new Promise(resolve => setTimeout(resolve, timeout));
 }
 export function InspectionPage() {
-
-
     const [refreshing, setRefreshing] = React.useState(false);
 
     const onRefresh = React.useCallback(() => {
@@ -33,6 +33,10 @@ export function InspectionPage() {
 
     const onPress = () => {
         Actions.InspectionForm()
+    }
+
+    const getCardsData = () => {
+        return api.get('')
     }
 
     return(

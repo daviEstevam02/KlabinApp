@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Text, View,StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 import { Header } from '../../components/Header'
 
+import api from '../../utils/api'
+
 import { Actions } from 'react-native-router-flux'
 
 export function LoginPage() {
@@ -10,6 +12,13 @@ export function LoginPage() {
     Actions.InitialPage()
   }
 
+  const getUserData = () => {
+    return api.get('')
+  }
+
+  const userValidation = () => {
+    //validate user
+  }
 
   return (
     <View style={styles.container}>

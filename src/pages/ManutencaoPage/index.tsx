@@ -15,6 +15,7 @@ import { Actions } from 'react-native-router-flux';
 
 import { Header } from '../../components/Header'
 import { HeaderPages } from '../../components/HeaderPages'
+import api from '../../utils/api'
 
 const wait = (timeout:any) => {
     return new Promise(resolve => setTimeout(resolve, timeout));
@@ -31,6 +32,10 @@ export function ManutencaoPage() {
 
     const onPress = () => {
         Actions.InspectionForm()
+    }
+
+    const getCardsData = () => {
+        return api.get('')
     }
 
     return(
